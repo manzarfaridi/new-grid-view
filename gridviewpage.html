@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgical Sutures Premium Dashboard</title>
+    <!-- CSS फाइल को लिंक किया गया है -->
+    <link rel="stylesheet" href="gridstyle.css">
+     <script src="gridscript.js"></script>
+
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <!-- TOP ACTIONS BAR -->
+        <header class="top-bar">
+            <div class="product-counter">
+                <span id="selected-count">0</span> Products Selected
+            </div>
+            <div class="action-buttons">
+                <button class="btn btn-toggle" id="view-toggle-btn">Switch to List View</button>
+                <button class="btn btn-xlsx">Save to PC (.XLSX)</button>
+                <button class="btn btn-whatsapp">Share on WhatsApp</button>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT WRAPPER -->
+        <div class="layout-wrapper">
+            
+            <!-- SIDEBAR: CATEGORIES & FILTERS -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3 class="section-title">Product Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#" class="category-link active">Show All</a></li>
+                        <li><a href="#" class="category-link">Analgesics</a></li>
+                        <li><a href="#" class="category-link">Gastro</a></li>
+                        <li><a href="#" class="category-link">Surgical Sutures</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="section-title">Filter by Company</h3>
+                    <div class="company-filters">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked class="company-select">
+                            <span>Johnson & Johnson</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked class="company-select">
+                            <span>Healthium</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked class="company-select">
+                            <span>Lotus Surgical</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked class="company-select">
+                            <span>Meril Life</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT AREA -->
+            <main class="main-content">
+                
+                <!-- SEARCH BOX -->
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" id="search-box" placeholder="Search by Brand, Molecule or Profile content...">
+                </div>
+
+                <!-- PRODUCTS DISPLAY CONTAINER -->
+                <div class="products-container" id="products-wrapper">
+                    
+                    <!-- CARD 1 -->
+                    <article class="product-card">
+                        <div class="card-header">
+                            <input type="checkbox" class="product-select-checkbox">
+                            <span class="brand-name">MONOCRYL Ultra</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><strong>Needle:</strong> 3/8 Circle Reverse Cutting</div>
+                            <div class="info-row"><strong>Suture:</strong> Poliglecaprone 25 Unbraided</div>
+                            <div class="info-row"><strong>Composition:</strong> Deflazacort-6mg</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="product-price">₹1,450 <small>(12 PCS)</small></span>
+                            <button class="btn-view-more">View More</button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 2 -->
+                    <article class="product-card">
+                        <div class="card-header">
+                            <input type="checkbox" class="product-select-checkbox">
+                            <span class="brand-name">TRUGLYDE</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><strong>Needle:</strong> 1/2 Circle Taper Point</div>
+                            <div class="info-row"><strong>Suture:</strong> Polyglycolic Acid Violet Braided</div>
+                            <div class="info-row"><strong>Composition:</strong> Deflazacort-6mg</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="product-price">₹850 <small>(12 PCS)</small></span>
+                            <button class="btn-view-more">View More</button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 3 -->
+                    <article class="product-card">
+                        <div class="card-header">
+                            <input type="checkbox" class="product-select-checkbox">
+                            <span class="brand-name">MENDIL Fix</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><strong>Needle:</strong> Straight Cutting Profile</div>
+                            <div class="info-row"><strong>Suture:</strong> Premium Non-Absorbable Silk</div>
+                            <div class="info-row"><strong>Composition:</strong> Pantoprazole 40mg</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="product-price">₹620 <small>(12 PCS)</small></span>
+                            <button class="btn-view-more">View More</button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="product-card">
+                        <div class="card-header">
+                            <input type="checkbox" class="product-select-checkbox">
+                            <span class="brand-name">MITSU Polymer</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><strong>Needle:</strong> 1/2 Circle Round Body Matrix</div>
+                            <div class="info-row"><strong>Suture:</strong> Polyglactin 910 Braided Coated</div>
+                            <div class="info-row"><strong>Composition:</strong> Surgical-Alu</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="product-price">₹980 <small>(12 PCS)</small></span>
+                            <button class="btn-view-more">View More</button>
+                        </div>
+                    </article>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT फाइल को लिंक किया गया है -->
+    
+</body>
+</html>
